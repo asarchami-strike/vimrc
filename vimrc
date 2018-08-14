@@ -347,6 +347,8 @@ nnoremap <silent> <leader>sh :VimShellCreate<CR>
 " let g:completor_python_binary = '/path/to/python/with/jedi/installed'
 let g:completor_auto_trigger = 0
 inoremap <expr> <Tab> pumvisible() ? "<C-N>" : "<C-R>=completor#do('complete')<CR>"
+" Run python file
+nnoremap <buffer> <F9> :exec '!python3' shellescape(@%, 1)<cr>
 "  jedi-vim
 " ----------------------------------------------------------------------------"
 let g:jedi#popup_on_dot = 0
@@ -361,6 +363,7 @@ let g:jedi#smart_auto_mappings = 0
 "  syntastic
 " ----------------------------------------------------------------------------"
 let g:syntastic_python_checkers=['python', 'flake8']
+let g:syntastic_python_checker = 'flake8 --ignore=E501'
 "  Polyglot
 " ----------------------------------------------------------------------------"
 let g:polyglot_disabled = ['python']                    " Default highlight is better than polyglot
