@@ -51,6 +51,7 @@ Plug 'bronson/vim-trailing-whitespace'                  " This plugin causes all
 Plug 'Raimondi/delimitMate'                             " This plug-in provides automatic closing of quotes, parenthesis, brackets, etc
 Plug 'krisajenkins/vim-pipe'                            " Associates a shell command with a file
 Plug 'mklabs/split-term.vim'                            " Utilities around neovim's terminal
+Plug 'mileszs/ack.vim'                                  " Vim frontend for the programmer's search tool ack
 
 Plug 'krisajenkins/vim-postgresql-syntax'               " Vim syntax for Postgres
 Plug 'alcesleo/vim-uppercase-sql'                       " Upper case for sql commands in a SQL file
